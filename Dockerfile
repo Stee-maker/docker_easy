@@ -1,7 +1,7 @@
 FROM ubuntu
+MAINTAINER stee (stephaneamoussou)
 RUN apt update -y
-RUN apt install -y nginx
-RUN apt install -y git
+RUN DEBIAN_FRONTEND=noninteractive apt install -y nginx git
 EXPOSE 80
 # Manage website_docker
 RUN rm -Rf /var/www/html/*
