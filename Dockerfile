@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER stee (stephaneamoussou)
+MAINTAINER stee (stephaneamoussou@gmail.com)
 RUN apt update -y
 RUN DEBIAN_FRONTEND=noninteractive apt install -y nginx git
 EXPOSE 80
